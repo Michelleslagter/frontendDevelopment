@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>stijlverhalen</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="afbeeldingen/nslogo.png" alt="Logo"> </a>
+        <nav>
+            <i class="material-icons">filter_list</i>
+            <img alt="search" id="zoekKnop"><span> </span>
+            <a href="inloggen.html"><img src="afbeeldingen/persoon.png" alt="Logo"> </a>
+
+        </nav>
+    </header>
+    <form class="zoeken" id="zoekbalk" action="">
+        <fieldset>
+            <input type="text" placeholder="zoeken">
+        </fieldset>
+    </form>
+
+    <main>
+
+        <nav>
+            <form class="filter" method="get">
+                <fieldset>
+                    <legend>Nivea:</legend>
+                    <label>
+                        <input type="checkbox" name="Makkelijk" value="Makkelijk" />Makkelijk</label>
+                    <label>
+                        <input type="checkbox" name="Gemiddeld" value="Gemiddeld" />Gemiddeld</label>
+                    <label>
+                        <input type="checkbox" name="Moeilijk" value="Moeilijk" />Moeilijk</label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Tekstsoorten:</legend>
+                    <label>
+                        <input type="checkbox" name="Globaal" value="Globaal" />Globaal</label>
+                    <label>
+                        <input type="checkbox" name="Gedichten" value="Gedichten" />Gedichten</label>
+                    <label>
+                        <input type="checkbox" name="Drama" value="Drama" />Drama</label>
+                    <label>
+                        <input type="checkbox" name="No-fictie" value="No-fictie" />No-fictie</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Filter op Auteur:</legend>
+                    <label>
+                        <input type="checkbox" name="Molovich" value="Molovich" />Molovich</label>
+                    <label>
+                        <input type="checkbox" name="Luijten" value="Luijten" />Hugo Luijten</label>
+                    <label>
+                        <input type="checkbox" name="all" value="all" />Elk</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Aantal minuten:</legend>
+                    <input type="range" name="worden" min="0" max="1000">
+
+                    <input type="submit" value="filteren" class="button" />
+
+                </fieldset>
+            </form>
+        </nav>
+
+
+        <a href=""><img src="afbeeldingen/iPhone%2062.png" alt=""></a>
+        <script rel="javascript" src="javascript1.js"></script>
+    </main>
+</body>
+
+</html>

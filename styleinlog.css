@@ -1,0 +1,242 @@
+    /*------------------General -----------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*------------------- Header ---------------*/
+
+header {
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 0.2em 0.2em #777;
+    left: 0;
+    padding: .2em;
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+header img {
+    max-width: 3.8em;
+    padding: 0em;
+}
+
+header nav img {
+    max-width: 2em;
+}
+
+header a {
+    margin-right: auto;
+}
+
+.material-icons:hover {
+    color: dodgerblue;
+}
+
+fieldset {
+    border: none;
+}
+
+.zoeken {
+    display: block;
+    position: relative;
+    color: blue;
+    border: none;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    left: 0;
+    position: absolute;
+}
+
+.uitZoeken {
+    top: 4em;
+}
+
+#zoeken fieldset input {
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+
+/*-----------Header formulier---------------*/
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #007BCC;
+    border: none;
+    color: white;
+}
+
+
+/*------------------- HEADING--------------*/
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #002B77;
+    font-size: 1.999em;
+    text-align: center;
+}
+
+h2 {
+    color: #0f0f0f;
+    margin-left: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.414em;
+}
+
+p {
+    color: #03071F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+    line-height: 1.6em;
+    max-width: 25em;
+    margin: 1em;
+}
+
+
+/*-------------------- Formulier -----------*/
+
+form {
+    background-color: #ffc917;
+    padding-top: .5em;
+    max-width: 30em;
+    margin: auto;
+    margin-top: 2em;
+}
+
+fieldset {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1=.3em;
+    margin-top: 1.3em;
+}
+
+label {
+    font-family: sans-serif;
+    color: #00337D;
+    font-size: .8em;
+    display: block;
+}
+
+form input {
+    display: block;
+    height: 3.3em;
+    width: calc(100% - 2px);
+}
+
+input:focus {
+    background: white;
+    color: #0f0f0f;
+}
+
+
+/*------------------------------- ARTICLES ----------------------------------*/
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section article {
+    background-color: #ffffff;
+    /*                            margin: .5em;*/
+    box-shadow: 0 2px 0 0 #C1C1C8;
+    max-width: 60em;
+    position: relative;
+}
+
+article p {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .9);
+    max-width: 25em;
+    padding: .25em;
+}
+
+.verdwijn {
+    display: none;
+}
+
+article i {
+    position: absolute;
+    top: 2.5em;
+    left: .5em;
+}
+
+span {
+    display: none;
+    color: #002B77;
+}
+
+article @media (max-width:40em) {
+    section article {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 40em) {
+    span {
+        display: inline-block;
+    }
+    article i {
+        font-size: 20em;
+    }
+    section article {
+        width: 50%;
+        /*                                width: calc(50% - 1em);*/
+    }
+}
+
+@media (min-width: 60em) {
+    section article i {
+        font-size: 20em;
+    }
+    section article {
+        width: 33%;
+        /*                                width: calc(33% - 1em);*/
+    }
+}
+
+
+/*-------------------------Filteren ----------------------------*/
+
+main nav form {
+    display: block;
+    position: relative;
+    top: -600px;
+    margin-bottom: -513px;
+}
+
+.uit {
+    top: 0;
+    margin-bottom: 0;
+}
+
+main nav form fieldset {
+    border: none;
+    color: #00337D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    margin-top: 1.3em;
+}
+
+label {
+    font-family: sans-serif;
+    color: #00337D;
+    font-size: .8em;
+    display: block;
+    p {
+        color: #03071F;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.0em;
+        line-height: 1.6em;
+        max-width: 25em;
+        margin: 1em;
+    }
